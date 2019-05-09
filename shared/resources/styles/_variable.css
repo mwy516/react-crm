@@ -1,0 +1,38 @@
+/* 背景色 */
+$bgColor: #fff;
+
+/* 非重要字体颜色 */
+$secondColor: #969696;
+
+/* 搜索框内字体 Normal */
+$secondColorHover: #787878;
+
+$colorA: #eee;
+
+/* 搜索框内字体border hover*/
+$colorB: #b4b4b4;
+
+/* 搜索框内字体 hover */
+$colorC: #333;
+
+/* 搜索框内字体border Normal */
+$colorD: #ddd;
+
+/* 搜索历史hover BGColor*/
+$colorE: #f0f0f0;
+
+@define-mixin circle $width{
+  width: $width;
+  height: $width;
+  border-radius: $width
+}
+
+@define-mixin normalCell {
+  border: 1px solid $colorD;
+  color: $secondColorHover;
+}
+
+@define-mixin normalCellHover {
+  border: 1px solid $colorB;
+  color: $colorC;
+}
